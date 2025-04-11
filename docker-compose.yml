@@ -19,7 +19,7 @@ services:
   # Service Backend (NestJS)
   backend:
     build: ./backend  # Path to the Dockerfile for the backend
-    image: sondes98/task-management-backend
+    image: eyacherif/task-management-backend:latest
     container_name: nestjs_backend  # Container name for the backend
     restart: always  # Automatically restart the container if it stops
     depends_on:
@@ -39,7 +39,7 @@ services:
   # Service Frontend (React)
   frontend:
     build: ./frontend  # Path to the Dockerfile for the frontend
-    image: sondes98/task-management-frontend
+    image: eyacherif/task-management-frontend:latest
     container_name: react_frontend  # Container name for the frontend
     restart: always  # Automatically restart the container if it stops
     depends_on:
